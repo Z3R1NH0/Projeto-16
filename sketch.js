@@ -59,7 +59,7 @@ function draw() {
     //mover espada com o mouse
     knife.y=World.mouseY;
     knife.x=World.mouseX;
-  
+    restart.visible = false;
     //Aumenta a pontuação se a espada tocar na fruta
     if(fruitGroup.isTouching(knife)){
       fruitGroup.destroyEach();
@@ -67,7 +67,7 @@ function draw() {
       knifeSwooshSound.play();
       score=score+2;
 
-      restart.visible = false;
+      
       
     }
     else
